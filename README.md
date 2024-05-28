@@ -4,7 +4,7 @@
 Welcome to TinyChatApp, a minimal chat bot created with React and Ollama. This application offers a simple yet engaging chat experience powered by cutting-edge technology.
 
 # Instructions
-To get started, follow these simple steps:
+To get started, follow these simple steps (*Make sure `go` and `node-js` is pre-installed*):
 
 1. **Install Dependencies**: Begin by installing the necessary dependencies for the application. Additionally, clone the Ollama repository to integrate its functionalities into TinyChatApp. Note that the installation process includes setting up Tinyllama, as it's optimized for smooth operation across various hardware configurations.
 ```bash
