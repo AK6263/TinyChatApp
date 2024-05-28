@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 800px;
+  min-width: 800px;
+  max-width: 800px;
+  border: 1px solid #424242;
+  background-color: #212121;
+  color: #ECECEC;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.chat-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px;
+  background-color: #212121;
+  padding-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding-left: 50px;
+  background-color: #212121;
+  border: 2px solid #383838;
+  border-radius: 50px;
+  margin-right: 10px;
+  height: 50px;
+  color: #ECECEC;
+  width: 80%;
+}
+
+.input-container button {
+  padding: 5px 5px;
+  height: 50px;
+  width: 10%;
+  max-width: 100px;
+  min-width: 50px;
+  border: 2px solid #383838;
+  background-color: #212121;
+  color: #ECECEC;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #383838;
+}
+
+.message-box {
+  padding: 10px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.user-message-style {
+  background-color: rgb(211, 43, 226);
+  border-radius: 10px 0px 10px 10px;
+  align-self: flex-end;
+  color: white;
+}
+
+.bot-message-style {
+  background-color: blueviolet;
+  border-radius: 0 10px 10px 10px;
+  align-self: flex-start;
+  color: white;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 1200px) {
+  .main-container {
+    width: 100%;
+    margin: 0 20px;
+    min-width: auto;
+    max-width: auto;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .main-container {
+    border: none;
+    /* Remove the border for a cleaner look on mobile */
+    box-shadow: none;
+    /* Remove the shadow for mobile */
+    min-width: auto;
+    max-width: auto;
+  }
+
+  .input-container {
+    /* flex-direction: column; */
+    /* align-items: stretch; */
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input-container input {
+    margin-right: 5px;
+    padding-left: 10px;
+  }
+
+  .input-container button {
+    width: 80px;
+    /* Full width button on mobile */
+  }
+
+  .message-box {
+    max-width: 100%;
+    /* Allow messages to take up full width */
+  }
+}
