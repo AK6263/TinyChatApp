@@ -1,8 +1,21 @@
-# React + Vite
+# TinyChatApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Welcome to TinyChatApp, a minimal chat bot created with React and Ollama. This application offers a simple yet engaging chat experience powered by cutting-edge technology.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Instructions
+To get started, follow these simple steps:
+
+1. **Install Dependencies**: Begin by installing the necessary dependencies for the application. Additionally, clone the Ollama repository to integrate its functionalities into TinyChatApp. Note that the installation process includes setting up Tinyllama, as it's optimized for smooth operation across various hardware configurations.
+```bash
+npm install
+npm run ollama_setup
+```
+
+2. **Exit Command Line**: After completing the setup, exit from the command line interface by using the `Ctrl + c`.
+
+3. **Start the Application**: Once the dependencies are installed and the setup is complete, launch the application in development mode. This command initiates the app and allows you to interact with the chat bot seamlessly.
+```bash
+Copy code
+npm run dev
+```
