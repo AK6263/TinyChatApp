@@ -5,4 +5,5 @@ cd ollama
 go generate ./...
 go build .
 
-./ollama run tinyllama
+# ./ollama serve &
+# ./ollama run tinyllama
